@@ -1,0 +1,26 @@
+{
+  "name": "docker-git-lessons",
+  "version": "1.0.0",
+  "description": "lessons of docker and git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangzju/docker-git-lessons.git"
+  },
+  "keywords": [
+    "docker",
+    "git"
+  ],
+  "author": "zhangzju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangzju/docker-git-lessons/issues"
+  },
+  "homepage": "https://github.com/zhangzju/docker-git-lessons#readme",
+  "dependencies": {
+    "impress.js": "^0.6.0"
+  }
+}
