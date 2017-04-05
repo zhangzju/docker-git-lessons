@@ -25,3 +25,27 @@
 > 一般开发人员的工作流
 > 管理人员的工作流
 
+## docker容器使用
+
+1. 容器与虚拟化
+> 虚拟化技术的发展
+> 与虚拟机对比的优势
+
+2. 基本概念
+> Image
+> Container
+> Volume
+> Registry,Swarm,Machine,Compose
+
+3. 基本操作
+> docker pull与docker push
+> docker run与 -p, -v, -t, -i, -d 
+> docker stop, docker start, docker restart
+> nsenter, docker attach, docker exec
+
+## jenkins自动化测试（演示）
+
+1. 持续集成与自动化测试
+> CI, QA, CD
+> jenkins与pipeline
+> 使用docker进行自动化测试
