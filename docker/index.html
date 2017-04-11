@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Intro To Git&&Docker | TP ISP Meetup 4/13/17 | by Zhangzju @zhangzju</title>
+
+    <meta name="description" content="Docker && git introduction" />
+    <meta name="author" content="zhangzju" />
+
+    <link href="css/introtonode.css" rel="stylesheet" />
+    <link href="css/materialize.min.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version
+            of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="-500" data-y="50">
+            <h1>Intro to git&&Docker</h1>
+            <h2>Zhangwei @zhangzju</h2>
+        </div>
+
+        <div id="agenda" class="step" data-x="500" data-y="50">
+            <p>Main Content</p>
+            <h3>git与版本控制</h3>
+            <h3>容器与Docker</h3>
+            <h3>敏捷开发与Jenkins</h3>
+            <h3>操作演示</h3>
+        </div>
+
+        <div class="cube git">
+            <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45"
+                data-scale="0.5">
+                <h1>git-版本控制</h1>
+                <p>为什么要控制版本：<strong>回溯</strong></p>
+                <ul>
+                    <li>RCS</li>
+                    <li>SVN：集中式</li>
+                    <li>Git：分布式</li>
+                </ul>
+            </div>
+            <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>git-核心思想</h1>
+                <ul>
+                    <li>分布式与多中心</li>
+                    <li>本地执行</li>
+                    <li>记录快照</li>
+                    <li>只添加数据</li>
+                </ul>
+            </div>
+            <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>git-三种状态</h1>
+                <ul>
+                    <li>staged：已暂存</li>
+                    <li>modified：已修改</li>
+                    <li>committed：已提交</li>
+                </ul>
+            </div>
+            <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0"
+                data-scale="0.5">
+                <figure>
+                    <img src="img/areas.png" alt="">
+                    <figcation>
+                        <h2>状态切换</h2>
+                    </figcation>
+                </figure>
+            </div>
+            <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>git-基本操作</h1>
+                <ul>
+                    <li>获取代码-git pull</li>
+                    <li>在工作目录中修改文件</li>
+                    <li>暂存文件-git add</li>
+                    <li>提交更新-git commit</li>
+                    <li>提交到远程-git push</li>
+                </ul>
+            </div>
+            <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>git-工作流</h1>
+                <ul>
+                    <li>管理人员分配功能分支</li>
+                    <li>开发人员获取分支代码</li>
+                    <li>在本地分支上进行开发</li>
+                    <li>完成发出pull request</li>
+                </ul>
+            </div>
+            <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45"
+                data-scale="0.5">
+                <h1>git-工作流</h1>
+                <figure>
+                    <img src="img/branch.png" alt="">
+                </figure>
+            </div>
+        </div>
+
+        <div class="cube docker">
+            <div class="topFace step" data-x="1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45"
+                data-scale="0.5">
+                <h1>docker-容器技术</h1>
+                <ul>
+                    <li>虚拟化技术：隔离的环境</li>
+                    <li>虚拟机：内核空间的模拟</li>
+                    <li>容器：用户空间的模拟</li>
+                </ul>
+            </div>
+            <div class="leftFace step" data-x="875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>docker-核心概念</h1>
+                <ul>
+                    <li>Image-镜像</li>
+                    <li>Container-容器</li>
+                    <li>Volume-数据</li>
+                    <li>Registry-仓库</li>
+                </ul>
+            </div>
+            <div class="rightFace step" data-x="1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>docker-基本操作</h1>
+                <ul>
+                    <li>获得：pull,load,import</li>
+                    <li>创建：run与-d, -it, -p, -v</li>
+                    <li>运行：start, stop</li>
+                    <li>操作：nsenter,attach,exec</li>
+                </ul>
+            </div>
+            <div class="backRightFace step" data-x="1125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>docker-工作流</h1>
+                <ul>
+                    <li>获取容器-BBA_TT_HGWv1</li>
+                    <li>获取代码-VR500_HGW</li>
+                    <li>修改代码</li>
+                    <li>运行容器编译</li>
+                    <li>完成提交</li>
+                </ul>
+            </div>
+            <div class="backLeftFace step" data-x="875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0"
+                data-scale="0.5">
+                <h1>jenkins与持续集成</h1>
+                <ul>
+                    <li>Continous Interated</li>
+                    <li>Quality Assurance</li>
+                    <li>Continous Deployment</li>
+                    <li>Automatic Testing</li>
+                </ul>
+            </div>
+            <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45"
+                data-scale="0.5">
+                <figure>
+                    <img src="img/flow.png" alt="">
+                    <figcation>
+                        <p>整体工作流程</p>
+                    </figcation>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+
+</body>
+
+</html>
